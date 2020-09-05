@@ -13,7 +13,7 @@ dstats <- function(x){
   # line Chart
   plot(x, type = 'l', xlab = 'x', ylab = 'y')
   # Density Graph
-  density(x)
+  plot(density(x))
   par(mfrow = c(1,1))
   # Descriptive Summary
   data.frame(min = min(x), median = median(x), mean = mean(x), max = max(x))
